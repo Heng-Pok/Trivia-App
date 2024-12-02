@@ -4,13 +4,35 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #f7f7f7;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.card-selection {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 10px;
+  justify-content:flex-start;
+}
+
+.card{
+  max-width: 500px;
+  padding: 5px;
+  background-color: rgba(172, 149, 1, 0.345);
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  img {
+    height: 270px;
+    width: auto;
+    border-radius: 5px;
+  }
 }
 
 a {

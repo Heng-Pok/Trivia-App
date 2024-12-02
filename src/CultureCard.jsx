@@ -1,0 +1,14 @@
+import profilePic from "./assets/culture.jpg"
+function CultureCard(){
+
+    return (
+        <div className="card"> 
+            <img src = {profilePic} alt = "cultures-picture" />
+            <h2>Topic: Cultural Studies</h2>
+            <p><b>Difficulty:</b> Medium</p>
+            <p><b>Description:</b> comparing and contrasting different cultures.</p>
+        </div>
+    )
+}
+
+export default CultureCard

@@ -1,0 +1,14 @@
+.option {
+    margin: "5px";
+    padding: "10px";
+}
+
+.nextQuestion {
+    margin-top: "20px";
+    padding: "10px";
+}
+
+.goBack {
+   padding: "10px";
+    margin-top: "20px";
+} 

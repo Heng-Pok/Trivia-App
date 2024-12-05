@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function LoginForm(){
+function SignupForm(){
     // State to handle form inputs
     const [formData, setFormData] = useState({
         name: '',
@@ -30,7 +30,7 @@ function LoginForm(){
     
     return (
         <>
-            <h2>Login</h2>
+            <h2>Signup</h2>
             <form onSubmit={handleSubmit}>
                 <label htmlFor="name">Name:</label>
                 <input
@@ -129,4 +129,4 @@ function LoginForm(){
     )
 }
 
-export default LoginForm
+export default SignupForm

@@ -1,3 +1,6 @@
+import LoginButton from "./LoginButton.jsx"
+import SignupButton from "./SignupButton.jsx"
+
 function Header(){
     return (
         <>
@@ -10,6 +13,8 @@ function Header(){
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
+            <LoginButton />
+            <SignupButton />
             <hr />
         </>
     )

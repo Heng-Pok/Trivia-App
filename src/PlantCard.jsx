@@ -1,8 +1,8 @@
 import profilePic from "./assets/plants.jpg"
 
-function PlantCard(){
+function PlantCard( {onClick} ){
     return (
-        <div className="card"> 
+        <div className="card" onClick={onClick}>
             <img src = {profilePic} alt = "plants-picture" />
             <h2>Topic: Plant Studies</h2>
             <p><b>Difficulty:</b> Hard</p>

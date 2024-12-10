@@ -3,43 +3,57 @@ import React, { useState } from 'react';
 function SignupForm(){
     // State to handle form inputs
     const [formData, setFormData] = useState({
-        name: '',
+        username: '',
         email: '',
         password: '',
-        gender: '',
         country: '',
-        message: '',
-        subscribe: false,
+        bio: '',
     });
 
     // Handle changes in input fields
     const handleChange = (e) => {
-        const { name, value, type, checked } = e.target;
+        const { name, value} = e.target;
         setFormData((prev) => ({
         ...prev,
-        [name]: type === 'checkbox' ? checked : value,
+        [name]: value,
         }));
     };
 
     // Handle form submission
-    const handleSubmit = (e) => {
-        e.preventDefault(); // Prevent the default browser submission
-        console.log('Form Data:', formData);
-        // We can send `formData` to our backend here
-    };
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+          const response = await fetch("http://137.184.116.179:3000/signup", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(formData),
+          });
+    
+          if (response.ok) {
+            const data = await response.json();
+            alert("User registered successfully!");
+            console.log(data);
+          } else {
+            const error = await response.json();
+            alert(error.error || "Failed to register");
+          }
+        } catch (err) {
+          console.error("Error during registration:", err);
+        }
+      };
     
     return (
         <>
-            <h2>Signup</h2>
+            <h2>Sign Up Here</h2>
             <form onSubmit={handleSubmit}>
-                <label htmlFor="name">Name:</label>
+                <label htmlFor="name">Username:</label>
                 <input
                     type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
+                    id="username"
+                    name="username"
+                    value={formData.username}
                     onChange={handleChange}
-                    placeholder="Enter your name"
+                    placeholder="Enter your username"
                 />
                 <br /><br />
 
@@ -64,29 +78,6 @@ function SignupForm(){
                 />
                 <br /><br />
 
-                <p>Gender:</p>
-                <label>
-                    <input
-                    type="radio"
-                    name="gender"
-                    value="male"
-                    checked={formData.gender === 'male'}
-                    onChange={handleChange}
-                    />
-                    Male
-                </label>
-                <label>
-                    <input
-                    type="radio"
-                    name="gender"
-                    value="female"
-                    checked={formData.gender === 'female'}
-                    onChange={handleChange}
-                    />
-                    Female
-                </label>
-                <br /><br />
-
                 <label htmlFor="country">Country:</label>
                 <select
                     id="country"
@@ -101,26 +92,15 @@ function SignupForm(){
                 </select>
                 <br /><br />
 
-                <label htmlFor="message">Message:</label><br />
+                <label htmlFor="bio">Bio:</label><br />
                 <textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
+                    id="bio"
+                    name="bio"
+                    value={formData.bio}
                     onChange={handleChange}
                     rows="4"
                     cols="50"
                 />
-                <br /><br />
-
-                <label>
-                    <input
-                    type="checkbox"
-                    name="subscribe"
-                    checked={formData.subscribe}
-                    onChange={handleChange}
-                    />
-                    Subscribe to Newsletter
-                </label>
                 <br /><br />
 
                 <button type="submit">Submit</button>

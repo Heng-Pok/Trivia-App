@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function LoginForm(){
+function LoginForm( {setUser} ){
     // State to handle form inputs
     const [formData, setFormData] = useState({
         email: '',
@@ -31,6 +31,7 @@ function LoginForm(){
             const data = await response.json();
             alert("User logged in successfully!");
             console.log("Login Successful: ", data);
+            setUser(formData.email)
           } else {
             const error = await response.json();
             alert(error.error || "Failed to log in");
@@ -39,7 +40,7 @@ function LoginForm(){
           console.error("Error during registration:", err);
         }
       };
-    
+
     return (
         <>
             <h2>Log In Here</h2>

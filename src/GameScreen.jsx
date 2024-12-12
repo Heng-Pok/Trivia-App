@@ -18,8 +18,8 @@ const GameScreen = () => {
 
     // eslint-disable-next-line no-unused-vars
     const handleAnswer = (answer, rowIndex, colIndex) => {
-        if (answer === selectedQuestion.correct) {
-            setScore(score + selectedQuestion.points);
+        if (answer === selectedQuestion.question.correct) {
+            setScore(score + selectedQuestion.question.points);
         }
         // Disable the button that was clicked
         setDisabledButtons((prevState) => (

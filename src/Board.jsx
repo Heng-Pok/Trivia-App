@@ -1,8 +1,8 @@
 // eslint-disable-next-line no-unused-vars
-import React from "react";
+import React, {useState} from "react";
 
 // eslint-disable-next-line react/prop-types
-const Board = ({ categoryData, onQuestionClick }) => {
+const Board = ({ categoryData, onQuestionClick, disabledButtons }) => {
 
     // eslint-disable-next-line react/prop-types
     const subcategories = Object.keys(categoryData.subcategories);
@@ -27,7 +27,8 @@ const Board = ({ categoryData, onQuestionClick }) => {
                         return question ? (
                             <button
                                 key={colIndex}
-                                onClick={() => onQuestionClick(question)}
+                                onClick={() => onQuestionClick(question, rowIndex, colIndex)}
+                                disabled={disabledButtons[`${rowIndex}-${colIndex}`]}
                                 className="question-btn"
                             >
                                 {/* eslint-disable-next-line react/prop-types */}

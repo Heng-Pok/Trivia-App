@@ -1,3 +1,5 @@
+// import * as fs from "node:fs";
+
 const triviaData = {
     animal: {
         subcategories: {
@@ -112,5 +114,14 @@ const triviaData = {
         }
     }
 };
+
+// const jsonString = JSON.stringify(triviaData)
+//
+// fs.writeFile('triviaData.json', jsonString, (err) => {
+//     if (err) {
+//         console.error('Error writing to file', err);
+//     } else {
+//         console.log('JSON file has been saved.'); }
+// });
 
 export default triviaData;

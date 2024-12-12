@@ -5,7 +5,7 @@ import { useLocation} from "react-router-dom";
 import Board from "./Board";
 import BoardPopUp from "./BoardPopUp";
 import GameScreen_SubmitButton from "./GameScreen_SubmitButton.jsx";
-import TriviaData from "./TriviaData.js";
+import TriviaData from "./triviaData.json";
 
 // eslint-disable-next-line react/prop-types
 const GameScreen = () => {

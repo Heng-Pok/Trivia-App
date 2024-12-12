@@ -17,11 +17,28 @@ function LoginForm(){
     };
 
     // Handle form submission
-    const handleSubmit = (e) => {
-        e.preventDefault(); // Prevent the default browser submission
-        console.log('User Logged In:\n', formData);
-        // We can send `formData` to our backend here
-    };
+    // Handle form submission
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+          const response = await fetch("http://137.184.116.179:3000/login", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(formData),
+          });
+    
+          if (response.ok) {
+            const data = await response.json();
+            alert("User logged in successfully!");
+            console.log("Login Successful: ", data);
+          } else {
+            const error = await response.json();
+            alert(error.error || "Failed to log in");
+          }
+        } catch (err) {
+          console.error("Error during registration:", err);
+        }
+      };
     
     return (
         <>

@@ -20,46 +20,42 @@ const GameScreen = () => {
     const handleAnswer = (answer, rowIndex, colIndex) => {
         if (answer === selectedQuestion.correct) {
             setScore(score + selectedQuestion.points);
-        } // Disable the button that was clicked
-
+        }
+        // Disable the button that was clicked
         setDisabledButtons((prevState) => (
             {...prevState, [`${rowIndex}-${colIndex}`]: true,})
         );
 
         setSelectedQuestion(null); // Close popup };
+    }
 
-        const handleSubmit = () => {
+    const handleSubmit = () => {
             console.log(score);
 
             // send score to users account on database?
-        }
+    }
 
-        const categoryData = TriviaData[cardType];
+    const categoryData = TriviaData[cardType];
 
-        return (
-            <div className="game-screen">
-                <h1>Category: {cardType}</h1>
-                <h2>Score: {score}</h2>
-                <Board
-                    categoryData={categoryData}
-                    onQuestionClick={(question, rowIndex, colIndex) => setSelectedQuestion({
-                        question,
-                        rowIndex,
-                        colIndex
-                    })}
-                    disabledButtons={disabledButtons} // Pass disabledButtons state to Board
+    return (
+        <div className="game-screen">
+            <h1>Category: {cardType}</h1>
+            <h2>Score: {score}</h2>
+            <Board
+                categoryData={categoryData}
+                onQuestionClick={(question, rowIndex, colIndex) => setSelectedQuestion({question, rowIndex, colIndex})}
+                disabledButtons={disabledButtons} // Pass disabledButtons state to Board
+            />
+            {selectedQuestion && (
+                <BoardPopUp questionData={selectedQuestion.question}
+                            onAnswer={(answer) => handleAnswer(answer, selectedQuestion.rowIndex, selectedQuestion.colIndex)}
                 />
-                {selectedQuestion && (
-                    <BoardPopUp questionData={selectedQuestion}
-                                onAnswer={(answer) => handleAnswer(answer, selectedQuestion.rowIndex, selectedQuestion.colIndex)}
-                    />
-                )}
-                <GameScreen_SubmitButton
-                    onSubmitClick={handleSubmit}
-                />
-            </div>
-        );
-    };
-}
+            )}
+            <GameScreen_SubmitButton
+                onSubmitClick={handleSubmit}
+            />
+        </div>
+    );
+};
 
 export default GameScreen;

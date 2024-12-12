@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function SignupForm(){
+function SignupForm( {setUser} ){
     // State to handle form inputs
     const [formData, setFormData] = useState({
         username: '',
@@ -33,6 +33,7 @@ function SignupForm(){
             const data = await response.json();
             alert("User registered successfully!");
             console.log(data);
+            setUser(formData.email)
           } else {
             const error = await response.json();
             alert(error.error || "Failed to register");

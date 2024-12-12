@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
@@ -5,7 +6,7 @@ import Board from "./Board";
 import BoardPopUp from "./BoardPopUp";
 import GameScreen_SubmitButton from "./GameScreen_SubmitButton.jsx";
 
-const GameScreen = () => {
+const GameScreen = ( {user} ) => {
     const [questions, setQuestions] = useState({});
     const [selectedQuestion, setSelectedQuestion] = useState(null);
     const [score, setScore] = useState(0);
@@ -56,6 +57,7 @@ const GameScreen = () => {
     return (
         <div className="game-screen">
             <h1>Category: {cardType}</h1>
+            {user ? <p>Logged in as: {user}</p> : <p>Please log in or sign up.</p>}
             <h2>Score: {score}</h2>
             {categoryData ? (
                 <Board

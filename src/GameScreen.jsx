@@ -12,6 +12,8 @@ const GameScreen = ( {user} ) => {
     const [score, setScore] = useState(0);
     const [disabledButtons, setDisabledButtons] = useState({});
 
+    const [username, setUsername] = useState(null)
+
     const location = useLocation();
     const { cardType } = location.state || {}; // Get the selected category
 
@@ -32,6 +34,27 @@ const GameScreen = ( {user} ) => {
         };
 
         fetchQuestions();
+    }, []);
+
+    useEffect(() => {
+        const fetchUsername = async () => {
+            try {
+                const response = await fetch (`http://137.184.116.179:3000/username?email=${encodeURIComponent(user)}`);
+
+                if (response.ok) {
+                    const username = await response.text();
+                    setUsername(username)
+                } else {
+                    console.log(user)
+                    console.error("Failed to fetch username");
+                }
+
+            } catch (error) {
+                console.error("Error fetching questions:", error);
+            }
+        };
+
+        fetchUsername()
     }, []);
 
     const handleAnswer = (answer, rowIndex, colIndex) => {
@@ -57,7 +80,7 @@ const GameScreen = ( {user} ) => {
     return (
         <div className="game-screen">
             <h1>Category: {cardType}</h1>
-            {user ? <p>Logged in as: {user}</p> : <p>Please log in or sign up.</p>}
+            {username ? <p>Logged in as: {username}</p> : <p>Please log in or sign up.</p>}
             <h2>Score: {score}</h2>
             {categoryData ? (
                 <Board

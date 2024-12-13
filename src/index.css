@@ -93,6 +93,11 @@ button:focus {
   background-color: pink;
 }
 
+button:disabled {
+  background-color: #1e1643;
+  color: #444444;
+}
+
 .list {
   list-style-type: none; 
 }

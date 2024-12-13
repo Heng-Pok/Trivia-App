@@ -38,10 +38,10 @@ function CountryLeaderboard() {
       ) : error ? (
         <p>{error}</p>
       ) : (
-        <ol>
-          {countryLeaderboardData.map((entry) => (
-            <li key={entry._id}>
-              <strong>{entry.country}</strong>: {entry.totalScore} points
+        <ol className="leaderboard">
+          {countryLeaderboardData.map((entry, index) => (
+            <li key={entry._id} className="leaderboard-item">
+              {index + 1}.<strong>{entry.country}</strong>: {entry.totalScore} points
             </li>
           ))}
         </ol>

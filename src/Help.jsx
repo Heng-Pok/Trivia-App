@@ -34,7 +34,7 @@ function Help() {
         <ul>
           {faqs.map((faq, index) => (
             <li key={index} className="listItem">
-              <b>{faq.question}</b>
+              <b className="question">{faq.question}</b>
               <p>{faq.answer}</p>
             </li>
           ))}

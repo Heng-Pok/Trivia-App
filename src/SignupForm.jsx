@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function SignupForm( {setUser} ){
     // State to handle form inputs
+    const navigate = useNavigate();
     const [formData, setFormData] = useState({
         username: '',
         email: '',
@@ -33,7 +35,8 @@ function SignupForm( {setUser} ){
             const data = await response.json();
             alert("User registered successfully!");
             console.log(data);
-            setUser(formData.email)
+            setUser(formData.email);
+            navigate('/');
           } else {
             const error = await response.json();
             alert(error.error || "Failed to register");

@@ -38,13 +38,15 @@ function Leaderboard() {
       ) : error ? (
         <p>{error}</p>
       ) : (
-        <ol>
-          {leaderboardData.map((entry) => (
-            <li key={entry._id}>
-              <strong>{entry.username}</strong>: {entry.score} points
+        <ol className="leaderboard">
+          {leaderboardData.map((entry, index) => (
+            <li key={entry._id} className="leaderboard-item">
+              {index + 1}. <strong>{entry.username}</strong>: {entry.score} points
             </li>
           ))}
         </ol>
+
+
       )}
     </>
   );

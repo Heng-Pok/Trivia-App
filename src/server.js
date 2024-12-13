@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(cors({ origin: "http://localhost:5173" })); // Update with the correct URL of our React app
 
 app.get('/questions', (req, res) => {
-  fs.readFile('triviaData.json', 'utf8', (err, data) => {
+  fs.readFile('triviaData2.json', 'utf8', (err, data) => {
     if (err) {
       console.error(err);
       res.status(500).send('Error fetching questions');
@@ -196,6 +196,20 @@ async function updateScore(username, newScore){
         console.error("Error updating score:", err);
     }
 }
+
+app.get('/leaderboard', async (req, res) => {
+        try {
+          const leaderboardData = await Leaderboard.find()
+            .sort({ score: -1 })
+            .limit(10)
+          res.status(200).json(leaderboardData);
+          console.log(leaderboardData);
+        } catch (error) {
+          console.error('Error fetching leaderboard data:', error);
+          res.status(500).json({ error: 'Failed to fetch leaderboard data' });
+        }
+});
+      
 
 app.get('/', (req, res) => {
     res.send('Hello from the server!');

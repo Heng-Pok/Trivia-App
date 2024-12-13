@@ -59,7 +59,10 @@ const GameScreen = ( {user} ) => {
 
     const handleAnswer = (answer, rowIndex, colIndex) => {
         if (answer === selectedQuestion.question.correct) {
+            console.log("selectedQuestion:" , selectedQuestion);
             setScore(score + selectedQuestion.question.points);
+            console.log("selectedQuestion.question:", selectedQuestion.question);
+            console.log("selectedQuestion.question.points:", selectedQuestion.question.points);
         }
         setDisabledButtons((prevState) => ({
             ...prevState,
@@ -104,8 +107,9 @@ const GameScreen = ( {user} ) => {
             {categoryData ? (
                 <Board
                     categoryData={categoryData}
-                    onQuestionClick={(question, rowIndex, colIndex) =>
-                        setSelectedQuestion({ question, rowIndex, colIndex })
+                    onQuestionClick={(question, rowIndex, colIndex) => {
+                        console.log("question:", question);
+                        setSelectedQuestion({ question, rowIndex, colIndex })}
                     }
                     disabledButtons={disabledButtons}
                 />

@@ -14,7 +14,7 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<MainPage setUser={setCurrentUser}/>}/>
+      <Route path="/" element={<MainPage setUser={setCurrentUser} user={currentUser}/>}/>
       <Route path="/login" element={<LoginForm setUser={setCurrentUser} />} />
       <Route path="/signup" element={<SignupForm setUser={setCurrentUser} />} />
       <Route path="/gamescreen" element={<GameScreen user={currentUser} />}/>

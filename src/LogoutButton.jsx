@@ -1,5 +1,6 @@
 
-function LogoutButton({setUser}){
+// eslint-disable-next-line react/prop-types
+function LogoutButton( {setUser} ){
 
     const handleOnClick = async () => {
         try{

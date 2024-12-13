@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./board.css";
 
 // eslint-disable-next-line react/prop-types
 const Board = ({ categoryData, onQuestionClick, disabledButtons }) => {

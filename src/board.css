@@ -1,0 +1,24 @@
+.subcategory-row {
+    display: flex;
+    justify-content: space-evenly; 
+    margin-bottom: 10px; 
+    gap: 10px; 
+}
+  .subcategory {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    margin-left:-15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    
+  }
+  
+  
+  .row {
+    display: flex; 
+    justify-content: space-evenly; 
+    gap: 10px; 
+    margin-bottom: 15px; 
+  }

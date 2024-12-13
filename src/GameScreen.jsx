@@ -69,11 +69,30 @@ const GameScreen = ( {user} ) => {
         setSelectedQuestion(null); // Close popup
     };
 
-    const handleSubmit = () => {
-        console.log(score);
+    const handleSubmit = async(e) => {
+        e.preventDefault();
 
-        // Optional: send score to the server for saving
-    };
+        try {
+            const response = await fetch("http://137.184.116.179:3000/uploadScore", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    username: username,
+                    score: score
+                }),
+            });
+
+            if (response.ok) {
+                alert("Score saved successfully!");
+            } else {
+                const error = await response.json();
+                alert(error.error || "Failed to save score");
+            }
+
+        } catch (error) {
+            console.error("Error during score saving", error);
+        }
+    }
 
     const categoryData = questions[cardType];
 

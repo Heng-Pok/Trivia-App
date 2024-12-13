@@ -4,6 +4,7 @@ import MainPage from "./MainPage.jsx";
 import SignupForm from "./SignupForm.jsx";
 import GameScreen from "./GameScreen.jsx";
 import {useState} from "react";
+import LogoutButton from "./LogoutButton.jsx";
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <Route path="/login" element={<LoginForm setUser={setCurrentUser} />} />
       <Route path="/signup" element={<SignupForm setUser={setCurrentUser} />} />
       <Route path="/gamescreen" element={<GameScreen user={currentUser} />}/>
+      <Route path="/" element={<LogoutButton setUser={setCurrentUser}/>}/>
     </Routes>
   );
 }

@@ -109,7 +109,7 @@ const GameScreen = ( {user} ) => {
                 <a href="/">Home</a>
             </div>
             <h1>Category: {cardType}</h1>
-            {username ? <p>Logged in as: {username}</p> : <p class="message">Please log in or sign up.</p>}
+            {username ? <p class="message">Logged in as: {username}</p> : <p class="message">Please log in or sign up.</p>}
             <h2>Score: {score}</h2>
             {categoryData ? (
                 <Board

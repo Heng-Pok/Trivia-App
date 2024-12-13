@@ -9,7 +9,6 @@ function MainPage ( {setUser} ){
         <Header setUser={setUser}/>
         <Body/>
         <Footer/>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quis laboriosam aspernatur cum, illo quod nisi nobis officia reprehenderit libero officiis nemo numquam autem nesciunt dicta provident omnis tempore voluptatum.</p>
         </>
     )
 }

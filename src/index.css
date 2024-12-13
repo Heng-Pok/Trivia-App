@@ -89,6 +89,10 @@ button:hover {
   background-color: #444444;
 }
 
+button:focus {
+  background-color: pink;
+}
+
 .list {
   list-style-type: none; 
 }

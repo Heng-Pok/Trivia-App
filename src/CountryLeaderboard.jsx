@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "./leaderboard.css";
 
 function CountryLeaderboard() {
   const [countryLeaderboardData, setCountryLeaderboardData] = useState([]);
@@ -28,6 +29,9 @@ function CountryLeaderboard() {
 
   return (
     <>
+      <div className="home-button">
+        <a href="/">Home</a>
+      </div>
       <h2> Country Leaderboard</h2>
       {loading ? (
         <p>Loading...</p>

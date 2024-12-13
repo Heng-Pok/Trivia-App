@@ -34,5 +34,13 @@
   .helpLink {
     color: blue;
     text-decoration: underline;
+    
   }
   
+  .unorderedList {
+    list-style-type: none; 
+  }
+
+  p {
+    text-align: left;
+  }

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "./leaderboard.css";
 
 function Leaderboard() {
   const [leaderboardData, setLeaderboardData] = useState([]);
@@ -27,6 +28,10 @@ function Leaderboard() {
 
   return (
     <>
+      <div className="home-button">
+        <a href="/">Home</a>
+      </div>
+      
       <h2>Leaderboard</h2>
       {loading ? (
         <p>Loading...</p>

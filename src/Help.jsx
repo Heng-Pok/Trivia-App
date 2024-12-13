@@ -24,6 +24,9 @@ function Help() {
 
   return (
     <div className="help">
+        <div className="home-button">
+            <a href="/">Home</a>
+        </div>
       <h1 className="title">Help & Support</h1>
 
       <div className="faq">
@@ -41,7 +44,7 @@ function Help() {
 
       <div className="faq">
         <h2 className="faqSubtitle">Useful Links</h2>
-        <ul>
+        <ul className = "unorderedList">
             <li className="listItem">
                 <a href="/signup" className="helpLink">Sign Up</a>
             </li>

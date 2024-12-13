@@ -1,4 +1,4 @@
-import profilePic from "./assets/plants.jpg"
+import profilePic from "./assets/plant.jpg"
 
 function PlantCard( {onClick} ){
     return (

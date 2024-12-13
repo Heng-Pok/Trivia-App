@@ -1,14 +1,15 @@
 import LoginButton from "./LoginButton.jsx"
 import SignupButton from "./SignupButton.jsx"
 import LogoutButton from "./LogoutButton.jsx"
+import "./index.css";
 
 // eslint-disable-next-line react/prop-types
 function Header( {setUser} ){
     return (
         <>
-            <h1>Trivia</h1>
+            <h1>Trivia Game</h1>
             <nav>
-                <ul>
+                <ul className="list">
                     <li><a href="/">Home</a></li>
                     <li><a href="/leaderboard">Leaderboard</a></li>
                     <li><a href="/countryLeaderboard">Country Leaderboard</a></li>

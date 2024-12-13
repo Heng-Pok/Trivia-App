@@ -2,7 +2,8 @@ import LoginButton from "./LoginButton.jsx"
 import SignupButton from "./SignupButton.jsx"
 import LogoutButton from "./LogoutButton.jsx"
 
-function Header(){
+// eslint-disable-next-line react/prop-types
+function Header( {setUser} ){
     return (
         <>
             <h1>Trivia</h1>
@@ -16,7 +17,7 @@ function Header(){
             </nav>
             <LoginButton />
             <SignupButton />
-            <LogoutButton/>
+            <LogoutButton setUser={setUser} />
             <hr />
         </>
     )

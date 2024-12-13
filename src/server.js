@@ -48,6 +48,20 @@ async function printLeaderboards(){
     }
 }
 
+app.get('/country-leaderboard', async (req, res) => {
+  try {
+      
+      const countryLeaderboard = await CountryLeaderboard.find()
+          .sort({ totalScore: -1 })
+          .select('country totalScore'); 
+
+      res.status(200).json(countryLeaderboard);
+  } catch (error) {
+      console.error('Error fetching country leaderboard:', error);
+      res.status(500).json({ error: 'Failed to fetch country leaderboard data' });
+  }
+});
+
 //printLeaderboards();
 
 // Test if database is accessible by retrieving all users

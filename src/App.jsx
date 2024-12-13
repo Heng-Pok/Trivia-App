@@ -5,6 +5,7 @@ import SignupForm from "./SignupForm.jsx";
 import GameScreen from "./GameScreen.jsx";
 import {useState} from "react";
 import Leaderboard from "./Leaderboard.jsx";
+import CountryLeaderboard from "./CountryLeaderboard.jsx";
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
       <Route path="/signup" element={<SignupForm setUser={setCurrentUser} />} />
       <Route path="/gamescreen" element={<GameScreen user={currentUser} />}/>
       <Route path="/leaderboard" element={<Leaderboard/>}/>
+      <Route path="/countryLeaderboard" element={<CountryLeaderboard/>}/>
     </Routes>
   );
 }

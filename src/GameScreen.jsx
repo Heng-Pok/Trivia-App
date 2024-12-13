@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 import Board from "./Board";
 import BoardPopUp from "./BoardPopUp";
@@ -15,6 +15,7 @@ const GameScreen = ( {user} ) => {
     const [username, setUsername] = useState(null)
 
     const location = useLocation();
+    const navigate = useNavigate();
     const { cardType } = location.state || {}; // Get the selected category
 
     // Fetch questions from the server
@@ -59,9 +60,9 @@ const GameScreen = ( {user} ) => {
 
     const handleAnswer = (answer, rowIndex, colIndex) => {
         if (answer === selectedQuestion.question.correct) {
-            console.log("selectedQuestion:" , selectedQuestion);
+           // console.log("selectedQuestion:" , selectedQuestion);
             setScore(score + selectedQuestion.question.points);
-            console.log("selectedQuestion.question:", selectedQuestion.question);
+            //console.log("selectedQuestion.question:", selectedQuestion.question);
             console.log("selectedQuestion.question.points:", selectedQuestion.question.points);
         }
         setDisabledButtons((prevState) => ({
@@ -73,6 +74,7 @@ const GameScreen = ( {user} ) => {
     };
 
     const handleSubmit = async(e) => {
+       
         e.preventDefault();
 
         try {
@@ -86,6 +88,7 @@ const GameScreen = ( {user} ) => {
             });
 
             if (response.ok) {
+                navigate('/');
                 alert("Score saved successfully!");
             } else {
                 const error = await response.json();
@@ -108,7 +111,7 @@ const GameScreen = ( {user} ) => {
                 <Board
                     categoryData={categoryData}
                     onQuestionClick={(question, rowIndex, colIndex) => {
-                        console.log("question:", question);
+                       // console.log("question:", question);
                         setSelectedQuestion({ question, rowIndex, colIndex })}
                     }
                     disabledButtons={disabledButtons}

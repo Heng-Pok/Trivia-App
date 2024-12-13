@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+
+
 
 function LoginForm( {setUser} ){
     // State to handle form inputs
+    const navigate = useNavigate();
     const [formData, setFormData] = useState({
         email: '',
         password: '',
@@ -31,7 +35,8 @@ function LoginForm( {setUser} ){
             const data = await response.json();
             alert("User logged in successfully!");
             console.log("Login Successful: ", data);
-            setUser(formData.email)
+            setUser(formData.email);
+            navigate('/');
           } else {
             const error = await response.json();
             alert(error.error || "Failed to log in");

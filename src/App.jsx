@@ -6,6 +6,7 @@ import GameScreen from "./GameScreen.jsx";
 import {useState} from "react";
 import Leaderboard from "./Leaderboard.jsx";
 import CountryLeaderboard from "./CountryLeaderboard.jsx";
+import Help from "./Help.jsx";
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
       <Route path="/gamescreen" element={<GameScreen user={currentUser} />}/>
       <Route path="/leaderboard" element={<Leaderboard/>}/>
       <Route path="/countryLeaderboard" element={<CountryLeaderboard/>}/>
+      <Route path="/help" element={<Help/>}/>
     </Routes>
   );
 }

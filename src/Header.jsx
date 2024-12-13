@@ -13,6 +13,7 @@ function Header( {setUser} ){
                     <li><a href="/leaderboard">Leaderboard</a></li>
                     <li><a href="/countryLeaderboard">Country Leaderboard</a></li>
                     <li><a href="#">About Us</a></li>
+                    <li><a href="/help">Help</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>

@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from "react";
 
 // eslint-disable-next-line react/prop-types
@@ -8,18 +7,28 @@ const Board = ({ categoryData, onQuestionClick, disabledButtons }) => {
 
     const [randomizedQuestions, setRandomizedQuestions] = useState([]);
 
-    // Function to randomize questions
+    // Function to randomize and organize questions by point values
     const getRandomQuestions = () => {
         const newRandomizedQuestions = [];
 
         subcategories.forEach((sub) => {
             const questions = categoryData.subcategories[sub];
 
-            // Shuffle the questions in the subcategory to pick 4 random ones for the score levels
+            // Shuffle the questions in the subcategory
             const shuffledQuestions = [...questions].sort(() => 0.5 - Math.random());
 
-            // Add the shuffled questions to the new array, picking the top 4
-            newRandomizedQuestions.push(shuffledQuestions.slice(0, 4));
+            // Organize the shuffled questions by points (100, 200, 300, 400)
+            const questionsByPoints = { 100: null, 200: null, 300: null, 400: null };
+
+            // Assign one question from each point level
+            shuffledQuestions.forEach((question) => {
+                if (questionsByPoints[question.points] === null) {
+                    questionsByPoints[question.points] = question;
+                }
+            });
+
+            // Push the organized questions to the array
+            newRandomizedQuestions.push([questionsByPoints[100], questionsByPoints[200], questionsByPoints[300], questionsByPoints[400]]);
         });
 
         setRandomizedQuestions(newRandomizedQuestions);

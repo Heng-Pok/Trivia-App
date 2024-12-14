@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-evenly; 
     margin-bottom: 10px; 
-    gap: 10px; 
+    gap: 75px;
 }
   .subcategory {
     font-size: 18px;
@@ -12,13 +12,12 @@
     margin-left:-15px;
     margin-right: 10px;
     border-radius: 5px;
-    
+      gap: 75px;
   }
-  
-  
+
   .row {
     display: flex; 
     justify-content: space-evenly; 
-    gap: 10px; 
+    gap: 75px;
     margin-bottom: 15px; 
   }

@@ -7,6 +7,7 @@ import {useEffect, useState} from "react";
 import Leaderboard from "./Leaderboard.jsx";
 import CountryLeaderboard from "./CountryLeaderboard.jsx";
 import Help from "./Help.jsx";
+import Contact from "./Contact.jsx";
 
 function App() {
     const [currentUser, setCurrentUser] = useState(() => {
@@ -32,6 +33,7 @@ function App() {
             <Route path="/leaderboard" element={<Leaderboard />} />
             <Route path="/countryLeaderboard" element={<CountryLeaderboard />} />
             <Route path="/help" element={<Help />} />
+            <Route path="/contact" element={<Contact />} />
         </Routes>
     );
 }

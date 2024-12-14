@@ -1,12 +1,12 @@
 import profilePic from "./assets/owl (3).jpg"
 
+// eslint-disable-next-line react/prop-types
 function AnimalCard( {onClick} ){
     return (
         <div className="card" onClick={onClick}> 
             <img src = {profilePic} alt = "owl-picture" />
-            <h2>Topic: Animal Studies</h2>
-            <p><b>Difficulty:</b> Medium</p>
-            <p><b>Description:</b> Animal related questions including but not limited to land animals, marine life, domestic animals and wild animals.</p>
+            <h2>Topic: Animal Trivia</h2>
+            <p><b>Description:</b> Animal related questions concerning general animals, mammals, reptiles and aquatic animals.</p>
         </div>
     )
 }

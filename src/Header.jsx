@@ -43,9 +43,8 @@ function Header({ user, setUser }) {
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/leaderboard">Leaderboard</Link></li>
                     <li><Link to="/countryLeaderboard">Country Leaderboard</Link></li>
-                    <li><Link to="#">About Us</Link></li>
                     <li><Link to="/help">Help</Link></li>
-                    <li><Link to="#">Contact</Link></li>
+                    <li><Link to="/contact">Contact</Link></li>
                 </ul>
             </nav>
             <div className="auth-buttons">

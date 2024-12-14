@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import './signup.css';
 
 function SignupForm( {setUser} ){
     // State to handle form inputs
@@ -298,7 +299,7 @@ function SignupForm( {setUser} ){
                 />
                 <br /><br />
 
-                <button type="submit">Submit</button>
+                <button className ="button" type="submit">Submit</button>
             </form>
         </>
     )

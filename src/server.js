@@ -5,11 +5,12 @@ const app = express();
 const PORT = 3000;
 const bcrypt = require("bcrypt");
 const fs = require('fs');
+const path = require('path');
 
 app.use(express.json());
 
 // Allow requests from our React app
-app.use(cors({ origin: "http://localhost:5173" })); // Update with the correct URL of our React app
+app.use(cors({ origin: "*" })); // Allow all origins (for testing)
 
 app.get('/questions', (req, res) => {
   fs.readFile('triviaData2.json', 'utf8', (err, data) => {
@@ -47,20 +48,6 @@ async function printLeaderboards(){
         console.error('Error loading leaderboards', err)
     }
 }
-
-app.get('/country-leaderboard', async (req, res) => {
-  try {
-      
-      const countryLeaderboard = await CountryLeaderboard.find()
-          .sort({ totalScore: -1 })
-          .select('country totalScore'); 
-
-      res.status(200).json(countryLeaderboard);
-  } catch (error) {
-      console.error('Error fetching country leaderboard:', error);
-      res.status(500).json({ error: 'Failed to fetch country leaderboard data' });
-  }
-});
 
 //printLeaderboards();
 
@@ -131,7 +118,7 @@ app.post('/login', async (req, res) => {
             email = email.toLowerCase();
             const user = await User.findOne({ email })
             if ( !user ) {
-                    return res.status( 401 ).json({ error: "User not found"});
+                return res.status( 401 ).json({ error: "User not found"});
             }
 
             // compare the entered password with the hashed password
@@ -148,7 +135,8 @@ app.post('/login', async (req, res) => {
 });
 
 app.get("/username", async (req, res) => {
-    const email = req.query.email;
+    let email = req.query.email;
+    email = email.toLowerCase();
     if (!email){
             return res.status(400).json({error: "Email parameter query is required"})
     }
@@ -211,25 +199,123 @@ async function updateScore(username, newScore){
     }
 }
 
-app.get('/leaderboard', async (req, res) => {
-        try {
-          const leaderboardData = await Leaderboard.find()
-            .sort({ score: -1 })
-            .limit(10)
-          res.status(200).json(leaderboardData);
-          console.log(leaderboardData);
-        } catch (error) {
-          console.error('Error fetching leaderboard data:', error);
-          res.status(500).json({ error: 'Failed to fetch leaderboard data' });
-        }
-});
+// app.get('/leaderboard', async (req, res) => {
+//         try {
+//           const leaderboardData = await Leaderboard.find()
+//             .sort({ score: -1 })
+//             .populate('userId', 'username'); // Fetch the 'username' field from the 'User' model
+//
+//           res.status(200).json(leaderboardData);
+//         } catch (error) {
+//           console.error('Error fetching leaderboard data:', error);
+//           res.status(500).json({ error: 'Failed to fetch leaderboard data' });
+//         }
+// });
       
+
+// app.get('/leaderboard', async (req, res) => {
+//         try {
+//           const leaderboardData = await Leaderboard.aggregate([
+//             {
+//               $lookup: {
+//                 from: 'users', // Name of the Users collection
+//                 localField: 'userId',
+//                 foreignField: '_id',
+//                 as: 'userDetails',
+//               },
+//             },
+//             {
+//               $unwind: '$userDetails', // Flatten the array created by $lookup
+//             },
+//             {
+//               $project: {
+//                 score: 1,
+//                 'userDetails.username': 1, // Include only the username field
+//               },
+//             },
+//             { $sort: { score: -1 } }, // Sort by score descending
+//           ]);
+      
+//           res.status(200).json(leaderboardData);
+//         } catch (error) {
+//           console.error('Error fetching leaderboard data:', error);
+//           res.status(500).json({ error: 'Failed to fetch leaderboard data' });
+//         }
+// });
+      
+// app.get('/leaderboard', async (req, res) => {
+//         try {
+//           const leaderboardData = await Leaderboard.find()
+//             .sort({ score: -1 })
+//           res.status(200).json(leaderboardData);
+//           console.log(leaderboardData);
+//         } catch (error) {
+//           console.error('Error fetching leaderboard data:', error);
+//           res.status(500).json({ error: 'Failed to fetch leaderboard data' });
+//         }
+// });
+
+app.get('/leaderboard', async (req, res) => {
+    try {
+        // Fetch the top 10 leaderboard entries
+        const leaderboardData = await Leaderboard.find()
+            .sort({ score: -1 })
+
+        // Extract the userIds from the leaderboard data
+        const userIds = leaderboardData.map((entry) => entry.userId);
+
+        // Fetch the usernames for the corresponding userIds
+        const users = await User.find({ _id: { $in: userIds } }, 'username');
+
+        // Create a map of userId to username for quick lookup
+        const userMap = users.reduce((map, user) => {
+            map[user._id] = user.username;
+            return map;
+        }, {});
+
+        // Attach usernames to the leaderboard data
+        const enrichedLeaderboardData = leaderboardData.map((entry) => ({
+            ...entry.toObject(),
+            username: userMap[entry.userId] || 'Unknown'
+        }));
+
+        res.status(200).json(enrichedLeaderboardData);
+    } catch (error) {
+        console.error('Error fetching leaderboard data:', error);
+        res.status(500).json({ error: 'Failed to fetch leaderboard data' });
+    }
+});
+
+app.get('/countryLeaderboard', async (req, res) => {
+  try {
+      
+      const countryLeaderboard = await CountryLeaderboard.find()
+          .sort({ totalScore: -1 })
+          .select('country totalScore'); 
+
+      res.status(200).json(countryLeaderboard);
+  } catch (error) {
+      console.error('Error fetching country leaderboard:', error);
+      res.status(500).json({ error: 'Failed to fetch country leaderboard data' });
+  }
+});
+
 
 app.get('/', (req, res) => {
     res.send('Hello from the server!');
 })
 
 // Listen LISTEN LISTEN!!
-app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
-})
+// app.listen(PORT, () => {
+//     console.log(`Server is running on http://localhost:${PORT}`);
+// })
+
+app.use(express.static(path.join(__dirname, 'dist')));
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+});
+
+app.listen(PORT, '0.0.0.0', () => {
+    console.log(`Server is running on http://0.0.0.0:${PORT}`);
+});

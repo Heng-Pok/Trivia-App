@@ -3,6 +3,7 @@ import SignupButton from "./SignupButton.jsx";
 import LogoutButton from "./LogoutButton.jsx";
 import "./index.css";
 import { useEffect, useState } from "react";
+import {Link} from "react-router-dom";
 
 // eslint-disable-next-line react/prop-types
 function Header({ user, setUser }) {
@@ -39,12 +40,12 @@ function Header({ user, setUser }) {
             <span>Signed in as: {username || "Guest"}</span> {/* Default to "Guest" if not signed in */}
             <nav>
                 <ul className="list">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/leaderboard">Leaderboard</a></li>
-                    <li><a href="/countryLeaderboard">Country Leaderboard</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="/help">Help</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/leaderboard">Leaderboard</Link></li>
+                    <li><Link to="/countryLeaderboard">Country Leaderboard</Link></li>
+                    <li><Link to="#">About Us</Link></li>
+                    <li><Link to="/help">Help</Link></li>
+                    <li><Link to="#">Contact</Link></li>
                 </ul>
             </nav>
             <div className="auth-buttons">

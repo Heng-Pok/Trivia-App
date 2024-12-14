@@ -1,0 +1,62 @@
+.contact {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.contact .home-button {
+    margin-bottom: 20px;
+}
+
+.contact .home-button a {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 16px;
+}
+
+.contact .title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-item {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-name {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+    text-align: left;
+    padding-right: 75px;
+}
+
+.contact-email a {
+    font-size: 16px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.contact-email a:hover {
+    text-decoration: underline;
+}
+
+.contact-item:last-child {
+    border-bottom: none;
+}

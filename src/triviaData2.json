@@ -1,0 +1,210 @@
+{
+  "animal": {
+    "subcategories": {
+      "General Animals": [
+        {"question": "Which animal is known to have the most powerful bite?", "options": ["Mouse", "Crocodile", "Hippopotamus", "Lion"], "correct": "Hippopotamus", "points": 100},
+        {"question": "Which of these animals is the fastest land animal?", "options": ["Tiger", "Cheetah", "Horse", "Ostrich"], "correct": "Cheetah", "points": 200},
+        {"question": "Which of these animals is found only in the Arctic?", "options": ["Polar bear", "Penguin", "Leopard seal", "Walrus"], "correct": "Polar bear", "points": 300},
+        {"question": "Which animal can regenerate its limbs?", "options": ["Crab", "Gecko", "Octopus", "Starfish"], "correct": "Starfish", "points": 400},
+        {"question": "What is the tallest living land animal?", "options": ["Elephant", "Giraffe", "Kangaroo", "Camel"], "correct": "Giraffe", "points": 100},
+        {"question": "Which animal is known as the 'Ship of the Desert'?", "options": ["Camel", "Horse", "Donkey", "Llama"], "correct": "Camel", "points": 200},
+        {"question": "Which animal is known for being able to sleep for up to 3 years?", "options": ["Snail", "Koala", "Bear", "Bat"], "correct": "Snail", "points": 300},
+        {"question": "What is the largest species of cat?", "options": ["Lion", "Tiger", "Jaguar", "Leopard"], "correct": "Tiger", "points": 400},
+        {"question": "What animal can survive without water for weeks at a time?", "options": ["Camel", "Koala", "Cactus Wren", "Kangaroo rat"], "correct": "Kangaroo rat", "points": 100},
+        {"question": "Which animal is known for its ability to communicate using clicks and whistles?", "options": ["Dolphin", "Bat", "Elephant", "Whale"], "correct": "Dolphin", "points": 200}
+      ],
+      "Mammals": [
+        {"question": "What is the largest mammal on Earth?", "options": ["Elephant", "Blue Whale", "Giraffe", "Lion"], "correct": "Blue Whale", "points": 100},
+        {"question": "Which mammal has the longest gestation period?", "options": ["Horse", "Elephant", "Blue Whale", "Rhinoceros"], "correct": "Elephant", "points": 200},
+        {"question": "Which mammal can fly?", "options": ["Flying Squirrel", "Sugar Glider", "Bat", "None"], "correct": "Bat", "points": 300},
+        {"question": "Which mammal has the most teeth?", "options": ["Giant Armadillo", "Orangutans", "Otter", "Orca"], "correct": "Giant Armadillo", "points": 400},
+        {"question": "What is the smallest mammal in the world?", "options": ["Pygmy Shrew", "Bumblebee Bat", "Mouse", "Squirrel"], "correct": "Bumblebee Bat", "points": 100},
+        {"question": "Which mammal has the thickest fur?", "options": ["Polar Bear", "Sea Otter", "Walrus", "Seal"], "correct": "Sea Otter", "points": 200},
+        {"question": "Which mammal is known for its distinctive black and white fur?", "options": ["Panda", "Zebra", "Skunk", "Koala"], "correct": "Panda", "points": 300},
+        {"question": "Which mammal produces the most milk?", "options": ["Cow", "Elephant", "Human", "Hippopotamus"], "correct": "Cow", "points": 400},
+        {"question": "Which mammal has the largest brain?", "options": ["Dolphin", "Blue Whale", "Elephant", "Chimpanzee"], "correct": "Blue Whale", "points": 100},
+        {"question": "Which mammal is known for its ability to survive without food for extended periods?", "options": ["Bear", "Koala", "Bat", "Elephant"], "correct": "Bear", "points": 200}
+      ],
+      "Fish": [
+        {"question": "What fish has the ability to produce electric shocks?", "options": ["Electric Eel", "Star fish", "Stingray", "Catfish"], "correct": "Electric Eel", "points": 100},
+        {"question": "What type of fish is known for being able to inflate its body when threatened?", "options": ["Puffer fish", "Barracuda", "Clownfish", "Angelfish"], "correct": "Puffer fish", "points": 200},
+        {"question": "What fish can survive on land for short periods by breathing through its skin?", "options": ["Eel", "Lungfish", "Mud skipper", "Carp"], "correct": "Mud skipper", "points": 300},
+        {"question": "Which fish is famous for its ability to change sex?", "options": ["Clownfish", "Angler fish", "Shark", "Piranha"], "correct": "Clownfish", "points": 400},
+        {"question": "What is the fastest fish in the ocean?", "options": ["Marlin", "Sailfish", "Tuna", "Shark"], "correct": "Sailfish", "points": 100},
+        {"question": "Which fish is known as the 'King of Salmon'?", "options": ["Chinook", "Coho", "Sockeye", "Atlantic"], "correct": "Chinook", "points": 200},
+        {"question": "Which fish is capable of swimming the deepest?", "options": ["Anglerfish", "Hagfish", "Goblin Shark", "Halibut"], "correct": "Anglerfish", "points": 300},
+        {"question": "Which species of fish is known for its distinct ability to glow in the dark?", "options": ["Lanternfish", "Anglerfish", "Electric Eel", "Goldfish"], "correct": "Lanternfish", "points": 400},
+        {"question": "What type of fish is known to build intricate underwater nests?", "options": ["Cichlid", "Betta", "Guppy", "Goldfish"], "correct": "Cichlid", "points": 100},
+        {"question": "Which fish is known for its symbiotic relationship with cleaner fish?", "options": ["Cleaner Wrasse", "Manta Ray", "Clownfish", "Shark"], "correct": "Cleaner Wrasse", "points": 200}
+      ],
+      "Reptiles": [
+        {"question": "Which reptile can change the color of its skin to blend into its surroundings?", "options": ["Iguana", "Chameleon", "Gecko", "Crocodile"], "correct": "Chameleon", "points": 100},
+        {"question": "What reptile is the heaviest snake in the world?", "options": ["King Cobra", "Anaconda", "Python", "Boa Constrictor"], "correct": "Anaconda", "points": 200},
+        {"question": "How do snakes smell their surroundings?", "options": ["Through their nostrils", "By flicking their tongue", "Through their skin", "By sensing vibrations"], "correct": "By flicking their tongue", "points": 300},
+        {"question": "What is the term for reptiles that live in trees?", "options": ["Arboreal", "Terrestrial", "Aquatic", "Fossorial"], "correct": "Arboreal", "points": 400},
+        {"question": "Which reptile has a third 'eye' on its head?", "options": ["Tuatara", "Gecko", "Komodo Dragon", "Lizard"], "correct": "Tuatara", "points": 100},
+        {"question": "Which reptile is known for its speed and agility on land?", "options": ["Komodo Dragon", "Crocodile", "Lizard", "Snake"], "correct": "Lizard", "points": 200},
+        {"question": "Which reptile is the fastest?", "options": ["Komodo Dragon", "Green Sea Turtle", "Spiny-tailed Iguana", "Gecko"], "correct": "Gecko", "points": 300},
+        {"question": "Which reptile has the longest lifespan?", "options": ["Tortoise", "Iguana", "Crocodile", "Komodo Dragon"], "correct": "Tortoise", "points": 400},
+        {"question": "Which reptile is known for its ability to survive for months without food or water?", "options": ["Komodo Dragon", "Iguana", "Crocodile", "Tortoise"], "correct": "Tortoise", "points": 100},
+        {"question": "Which reptile is famous for having venomous fangs that can paralyze their prey?", "options": ["King Cobra", "Rattlesnake", "Pit Viper", "Mamba"], "correct": "King Cobra", "points": 200}
+      ]
+    }
+  },
+  "plant": {
+    "subcategories": {
+      "Flowers": [
+        {"question": "What flower is traditionally associated with love and romance?", "options": ["Daisy", "Tulip", "Rose", "Lily"], "correct": "Rose", "points": 100},
+        {"question": "What flower is known for its ability to track the movement of the sun?", "options": ["Poppy", "Daisy", "Lily", "Sunflower"], "correct": "Sunflower", "points": 200},
+        {"question": "What is the official flower of Japan, often associated with the spring season?", "options": ["Chrysanthemum", "Sakura (Cherry Blossom)", "Azalea", "Magnolia"], "correct": "Sakura (Cherry Blossom)", "points": 300},
+        {"question": "Which flower is known for blooming once every 12 years in India?", "options": ["Neelakurinji", "Lotus", "Jasmine", "Dahlia"], "correct": "Neelakurinji", "points": 400},
+        {"question": "Which flower is known for its bright yellow petals and is often used to symbolize friendship?", "options": ["Sunflower", "Tulip", "Daisy", "Poppy"], "correct": "Sunflower", "points": 100},
+        {"question": "What flower is often given on Mother's Day in many countries?", "options": ["Rose", "Lily", "Carnation", "Orchid"], "correct": "Carnation", "points": 200},
+        {"question": "Which flower is often associated with peace and purity?", "options": ["Lily", "Tulip", "Daisy", "Rose"], "correct": "Lily", "points": 300},
+        {"question": "Which flower is known for its strong fragrance and is often used in perfumes?", "options": ["Jasmine", "Sunflower", "Daffodil", "Tulip"], "correct": "Jasmine", "points": 400},
+        {"question": "What flower has a bulb that is commonly associated with spring and comes in many colors, including purple, yellow, and white?", "options": ["Crocus", "Daffodil", "Tulip", "Hyacinth"], "correct": "Tulip", "points": 100},
+        {"question": "Which flower has been a symbol of the Netherlands for centuries?", "options": ["Sunflower", "Tulip", "Lily", "Rose"], "correct": "Tulip", "points": 200}
+      ],
+      "Trees": [
+        {"question": "What type of tree produces acorns?", "options": ["Maple", "Oak", "Pine", "Birch"], "correct": "Oak", "points": 100},
+        {"question": "What tree is known as the tallest tree species in the world?", "options": ["Sequoia", "Douglas Fir", "Giant Cedar", "Coast Redwood"], "correct": "Coast Redwood", "points": 200},
+        {"question": "What is the term for trees that lose their leaves in the fall?", "options": ["Perennial", "Coniferous", "Deciduous", "Evergreen"], "correct": "Deciduous", "points": 300},
+        {"question": "What tree grows the fastest and is often used for paper production?", "options": ["Bamboo", "Pine", "Poplar", "Maple"], "correct": "Bamboo", "points": 400},
+        {"question": "What type of tree is commonly associated with the production of maple syrup?", "options": ["Birch", "Oak", "Maple", "Pine"], "correct": "Maple", "points": 100},
+        {"question": "Which tree is often used as a Christmas tree due to its pleasant aroma and needle retention?", "options": ["Douglas Fir", "Oak", "Pine", "Cedar"], "correct": "Douglas Fir", "points": 200},
+        {"question": "Which type of tree has cones instead of flowers and includes species like the spruce and fir?", "options": ["Coniferous", "Deciduous", "Angiosperms", "Monocots"], "correct": "Coniferous", "points": 300},
+        {"question": "Which tree is famous for its iconic heart-shaped leaves and is often associated with the New England region of the U.S.?", "options": ["Red Maple", "Birch", "Acer", "Sycamore"], "correct": "Red Maple", "points": 400},
+        {"question": "What type of tree produces a sticky resin used in varnishes and incense?", "options": ["Pine", "Cedar", "Balsam Fir", "Maple"], "correct": "Pine", "points": 100},
+        {"question": "Which tree has leaves that turn bright red in the fall, making it a popular ornamental tree?", "options": ["Red Maple", "Birch", "Elm", "Oak"], "correct": "Red Maple", "points": 200}
+      ],
+      "Edible": [
+        {"question": "Which fruit is the primary ingredient in guacamole?", "options": ["Mango", "Lime", "Tomato", "Avocado"], "correct": "Avocado", "points": 100},
+        {"question": "What legume is used to make hummus?", "options": ["Lentil", "Black Bean", "Chickpea", "Kidney Bean"], "correct": "Chickpea", "points": 200},
+        {"question": "Which herb is often paired with tomatoes in Italian cuisine?", "options": ["Dill", "Chives", "Oregano", "Sage"], "correct": "Oregano", "points": 300},
+        {"question": "What ancient grain is sometimes called 'the mother of all grains'?", "options": ["Amaranth", "Millet", "Quinoa", "Spelt"], "correct": "Quinoa", "points": 400},
+        {"question": "Which fruit is commonly known for its high vitamin C content and is often used in citrus juices?", "options": ["Orange", "Apple", "Grape", "Banana"], "correct": "Orange", "points": 100},
+        {"question": "What type of vegetable is a staple in many Middle Eastern dishes and is used to make falafel?", "options": ["Eggplant", "Zucchini", "Chickpea", "Cucumber"], "correct": "Chickpea", "points": 200},
+        {"question": "Which fruit is known for its high potassium content and is often eaten as a snack?", "options": ["Apple", "Banana", "Peach", "Pear"], "correct": "Banana", "points": 300},
+        {"question": "What leafy green is commonly used in salads and is a source of folate and vitamins A and K?", "options": ["Spinach", "Lettuce", "Kale", "Arugula"], "correct": "Spinach", "points": 400},
+        {"question": "What fruit is commonly associated with a tropical climate and has a spiky green skin and sweet yellow flesh?", "options": ["Mango", "Papaya", "Pineapple", "Coconut"], "correct": "Pineapple", "points": 100},
+        {"question": "Which legume is a key ingredient in a traditional Indian dish called dal?", "options": ["Chickpea", "Lentil", "Pea", "Bean"], "correct": "Lentil", "points": 200}
+      ],
+      "Plant Anatomy": [
+        {"question": "What vascular tissue in plants transports water from the roots to the leaves?", "options": ["Phloem", "Xylem", "Cambium", "Cortex"], "correct": "Xylem", "points": 100},
+        {"question": "Which part of a plant contains the reproductive organs?", "options": ["Flower", "Stem", "Roots", "Leaves"], "correct": "Flower", "points": 200},
+        {"question": "What is the waxy layer that covers a leaf and helps prevent water loss?", "options": ["Cuticle", "Epidermis", "Cortex", "Mesophyll"], "correct": "Cuticle", "points": 300},
+        {"question": "In which layer of the leaf does most photosynthesis occur?", "options": ["Spongy Mesophyll", "Epidermis", "Vein", "Palisade Mesophyll"], "correct": "Palisade Mesophyll", "points": 400},
+        {"question": "Which part of the plant anchors it to the ground and absorbs nutrients and water?", "options": ["Roots", "Stem", "Leaves", "Flowers"], "correct": "Roots", "points": 100},
+        {"question": "What is the process by which plants convert sunlight into energy?", "options": ["Respiration", "Photosynthesis", "Transpiration", "Germination"], "correct": "Photosynthesis", "points": 200},
+        {"question": "Which part of the plant is responsible for transporting sugars from the leaves to the rest of the plant?", "options": ["Xylem", "Phloem", "Cortex", "Cambium"], "correct": "Phloem", "points": 300},
+        {"question": "What is the process by which water evaporates from plant leaves into the atmosphere?", "options": ["Photosynthesis", "Transpiration", "Respiration", "Germination"], "correct": "Transpiration", "points": 400},
+        {"question": "What part of a flower contains pollen and is essential for pollination?", "options": ["Stigma", "Anther", "Filament", "Ovary"], "correct": "Anther", "points": 100},
+        {"question": "Which part of a plant is primarily responsible for the exchange of gases (like CO2) with the environment?", "options": ["Roots", "Flowers", "Stomata", "Stem"], "correct": "Stomata", "points": 200}
+      ]
+    }
+  },
+  "culture": {
+      "subcategories": {
+        "Language": [
+          {"question": "Which language is the most spoken in the world?", "options": ["Spanish", "English", "Mandarin Chinese", "French"], "correct": "Mandarin Chinese", "points": 100},
+          {"question": "What is the official language of Brazil?", "options": ["Spanish", "Portuguese", "Mandarin Chinese", "French"], "correct": "Portuguese", "points": 200},
+          {"question": "Which language has the most words in its vocabulary?", "options": ["German", "English", "Japanese", "Latin"], "correct": "English", "points": 300},
+          {"question": "What is the term for a word that is spelled the same forwards and backwards?", "options": ["Oxymoron", "Homophone", "Anagram", "Palindrome"], "correct": "Palindrome", "points": 400},
+          {"question": "Which language is spoken by the most people in Africa?", "options": ["Swahili", "Arabic", "Zulu", "Hausa"], "correct": "Arabic", "points": 100},
+          {"question": "Which of the following is a language isolate?", "options": ["Basque", "English", "French", "Spanish"], "correct": "Basque", "points": 200},
+          {"question": "What is the primary language spoken in Canada?", "options": ["English", "French", "Spanish", "German"], "correct": "English", "points": 300},
+          {"question": "Which language has the most native speakers?", "options": ["Mandarin Chinese", "Spanish", "Hindi", "English"], "correct": "Mandarin Chinese", "points": 400},
+          {"question": "What language family does French belong to?", "options": ["Romance", "Germanic", "Slavic", "Celtic"], "correct": "Romance", "points": 100},
+          {"question": "Which language is known for its use of characters rather than an alphabet?", "options": ["Chinese", "Arabic", "Greek", "Russian"], "correct": "Chinese", "points": 200}
+        ],
+        "Art": [
+          {"question": "Who painted the famous artwork 'The Starry Night'?", "options": ["Pablo Picasso", "Claude Monet", "Vincent van Gogh", "Leonardo da Vinci"], "correct": "Vincent van Gogh", "points": 100},
+          {"question": "Which famous sculptor created the statue of David?", "options": ["Donatello", "Michelangelo", "Francis Bacon", "Raphael"], "correct": "Michelangelo", "points": 200},
+          {"question": "Who painted the 'School of Athens,' featuring ancient Greek philosophers?", "options": ["Raphael", "Rembrandt", "Caravaggio", "Eugène Delacroix"], "correct": "Raphael", "points": 300},
+          {"question": "What type of art is characterized by the use of geometric shapes and abstract forms?", "options": ["Cubism", "Surrealism", "Impressionism", "Realism"], "correct": "Cubism", "points": 400},
+          {"question": "Which famous artist is known for his paintings of water lilies?", "options": ["Pablo Picasso", "Claude Monet", "Salvador Dalí", "Edvard Munch"], "correct": "Claude Monet", "points": 100},
+          {"question": "Which art movement is associated with the use of dreamlike imagery and the unconscious?", "options": ["Dada", "Impressionism", "Surrealism", "Fauvism"], "correct": "Surrealism", "points": 200},
+          {"question": "Who is known for the painting 'The Persistence of Memory'?", "options": ["Pablo Picasso", "Claude Monet", "Salvador Dalí", "Henri Matisse"], "correct": "Salvador Dalí", "points": 300},
+          {"question": "Which painting technique uses tiny dots of color to form an image?", "options": ["Impressionism", "Pointillism", "Cubism", "Abstract Expressionism"], "correct": "Pointillism", "points": 400},
+          {"question": "Who painted 'The Scream'?", "options": ["Edvard Munch", "Leonardo da Vinci", "Vincent van Gogh", "Claude Monet"], "correct": "Edvard Munch", "points": 100},
+          {"question": "Which artist is known for the 'Blue Period'?", "options": ["Pablo Picasso", "Henri Matisse", "Salvador Dalí", "Michelangelo"], "correct": "Pablo Picasso", "points": 200}
+        ],
+        "Literature": [
+          {"question": "Which play by William Shakespeare is about the tragic love story of two young lovers from feuding families?", "options": ["Hamlet", "Macbeth", "Othello", "Romeo and Juliet"], "correct": "Romeo and Juliet", "points": 100},
+          {"question": "Who is the author of the fantasy series 'The Lord of the Rings'?", "options": ["J.R.R. Tolkien", "C.S. Lewis", "George R.R. Martin", "J.K. Rowling"], "correct": "J.R.R. Tolkien", "points": 200},
+          {"question": "What is the term for a novel or story that is set in an idealized version of the past or future?", "options": ["Dystopia", "Utopia", "Allegory", "Parable"], "correct": "Utopia", "points": 300},
+          {"question": "What is the term for a recurring subject, theme, or symbol in a work of literature?", "options": ["Allegory", "Theme", "Motif", "Imagery"], "correct": "Motif", "points": 400},
+          {"question": "Which novel features the character of Captain Ahab?", "options": ["Moby-Dick", "The Catcher in the Rye", "Pride and Prejudice", "1984"], "correct": "Moby-Dick", "points": 100},
+          {"question": "Which author wrote 'To Kill a Mockingbird'?", "options": ["Harper Lee", "F. Scott Fitzgerald", "Mark Twain", "J.D. Salinger"], "correct": "Harper Lee", "points": 200},
+          {"question": "Which novel by George Orwell explores a dystopian society?", "options": ["Animal Farm", "1984", "Brave New World", "Fahrenheit 451"], "correct": "1984", "points": 300},
+          {"question": "Who wrote the 'Harry Potter' series?", "options": ["J.K. Rowling", "C.S. Lewis", "J.R.R. Tolkien", "Suzanne Collins"], "correct": "J.K. Rowling", "points": 400},
+          {"question": "What novel by Jane Austen features the characters Elizabeth Bennet and Mr. Darcy?", "options": ["Emma", "Pride and Prejudice", "Sense and Sensibility", "Mansfield Park"], "correct": "Pride and Prejudice", "points": 100},
+          {"question": "Which Shakespeare play features the character of Iago?", "options": ["Macbeth", "Hamlet", "Othello", "King Lear"], "correct": "Othello", "points": 200}
+        ],
+        "Pop Culture": [
+          {"question": "Who is known as the 'King of Pop'?", "options": ["Michael Jackson", "Prince", "Elvis Presley", "Justin Timberlake"], "correct": "Michael Jackson", "points": 100},
+          {"question": "Which 1980s film featured a young boy named Marty McFly who traveled through time in a DeLorean?", "options": ["Ghostbusters", "Back to the Future", "The Goonies", "E.T. the Extra-Terrestrial"], "correct": "Back to the Future", "points": 200},
+          {"question": "Who is the former Friends star who became a successful producer and entrepreneur with her company 'The Honest Company'?", "options": ["Courteney Cox", "Jennifer Aniston", "Lisa Kudrow", "Jessica Alba"], "correct": "Jessica Alba", "points": 300},
+          {"question": "In the Harry Potter series, what is the name of Harry's owl?", "options": ["Errol", "Pigwidgeon", "Hermes", "Hedwig"], "correct": "Hedwig", "points": 400},
+          {"question": "Who played the character of Captain Jack Sparrow in the 'Pirates of the Caribbean' films?", "options": ["Johnny Depp", "Orlando Bloom", "Brad Pitt", "Leonardo DiCaprio"], "correct": "Johnny Depp", "points": 100},
+          {"question": "What TV show is known for the phrase 'Winter is coming'?", "options": ["Breaking Bad", "The Walking Dead", "Game of Thrones", "Stranger Things"], "correct": "Game of Thrones", "points": 200},
+          {"question": "Who starred as Tony Stark/Iron Man in the Marvel Cinematic Universe?", "options": ["Chris Hemsworth", "Robert Downey Jr.", "Chris Evans", "Mark Ruffalo"], "correct": "Robert Downey Jr.", "points": 300},
+          {"question": "Which film won the Oscar for Best Picture in 1994?", "options": ["The Shawshank Redemption", "Forrest Gump", "The Godfather", "Titanic"], "correct": "Forrest Gump", "points": 400},
+          {"question": "Which actor famously said, 'May the Force be with you'?", "options": ["Mark Hamill", "Harrison Ford", "Carrie Fisher", "James Earl Jones"], "correct": "Harrison Ford", "points": 100},
+          {"question": "What animated series features characters such as Homer, Bart, and Marge Simpson?", "options": ["Family Guy", "The Simpsons", "South Park", "Futurama"], "correct": "The Simpsons", "points": 200}
+        ]
+      }
+    },
+  "history": {
+      "subcategories": {
+        "Historical Discoveries": [
+          {"question": "Who is credited with discovering the laws of gravity after observing an apple fall from a tree?", "options": ["Isaac Newton", "Albert Einstein", "Nikola Tesla", "Galileo Galilei"], "correct": "Isaac Newton", "points": 100},
+          {"question": "In 1492, which explorer sailed across the Atlantic and 'discovered' the Americas?", "options": ["Marco Polo", "Christopher Columbus", "Ferdinand Magellan", "Hernán Cortés"], "correct": "Christopher Columbus", "points": 200},
+          {"question": "Which scientist discovered the law of planetary motion and is known for his work on elliptical orbits?", "options": ["Isaac Newton", "Galileo Galilei", "Johannes Kepler", "Albert Einstein"], "correct": "Johannes Kepler", "points": 300},
+          {"question": "In 1953, James Watson and Francis Crick discovered the structure of which molecule?", "options": ["Enzymes", "Proteins", "RNA", "DNA"], "correct": "DNA", "points": 400},
+          {"question": "Who developed the first successful polio vaccine in 1955?", "options": ["Edward Jenner", "Louis Pasteur", "Jonas Salk", "Marie Curie"], "correct": "Jonas Salk", "points": 100},
+          {"question": "Who is credited with developing the theory of evolution by natural selection?", "options": ["Charles Darwin", "Gregor Mendel", "Louis Pasteur", "Albert Einstein"], "correct": "Charles Darwin", "points": 200},
+          {"question": "Who invented the first practical telephone in 1876?", "options": ["Alexander Graham Bell", "Thomas Edison", "Nikola Tesla", "James Watt"], "correct": "Alexander Graham Bell", "points": 300},
+          {"question": "Which scientist is known for his theory of relativity?", "options": ["Isaac Newton", "Albert Einstein", "Galileo Galilei", "Max Planck"], "correct": "Albert Einstein", "points": 400},
+          {"question": "Who discovered the circulation of blood in the human body?", "options": ["Andreas Vesalius", "William Harvey", "Galen", "Hippocrates"], "correct": "William Harvey", "points": 100},
+          {"question": "Which ancient civilization was responsible for the creation of the first known system of writing?", "options": ["Ancient Egypt", "Sumerians", "Ancient Greece", "Romans"], "correct": "Sumerians", "points": 200}
+        ],
+        "Historical Figures": [
+          {"question": "Who was the first President of the United States?", "options": ["Thomas Jefferson", "Benjamin Franklin", "George Washington", "Abraham Lincoln"], "correct": "George Washington", "points": 100},
+          {"question": "Which British prime minister served during World War II and is known for his leadership and speeches during the war?", "options": ["Winston Churchill", "Margaret Thatcher", "Tony Blair", "David Cameron"], "correct": "Winston Churchill", "points": 200},
+          {"question": "Who was the first explorer to successfully sail around the world, completing his voyage in 1522?", "options": ["Francis Drake", "John Cabot", "Vasco da Gama", "Ferdinand Magellan"], "correct": "Ferdinand Magellan", "points": 300},
+          {"question": "Who was the first person to travel to the North Pole, completing the journey in 1909?", "options": ["Ernest Shackleton", "Robert Peary", "Roald Amundsen", "Sir Edmund Hillary"], "correct": "Robert Peary", "points": 400},
+          {"question": "Which Russian Tsar is known for his westernization reforms and the creation of the Russian Empire?", "options": ["Catherine the Great", "Peter the Great", "Ivan the Terrible", "Alexander the Great"], "correct": "Peter the Great", "points": 100},
+          {"question": "Who was the first woman to fly solo across the Atlantic Ocean?", "options": ["Amelia Earhart", "Bessie Coleman", "Harriet Quimby", "Sally Ride"], "correct": "Amelia Earhart", "points": 200},
+          {"question": "Who was the famous military leader that became the Emperor of France after the French Revolution?", "options": ["Louis XVI", "Napoleon Bonaparte", "Maximilien Robespierre", "Charles de Gaulle"], "correct": "Napoleon Bonaparte", "points": 300},
+          {"question": "Who was the first African-American Supreme Court Justice in the United States?", "options": ["Thurgood Marshall", "Clarence Thomas", "Sonia Sotomayor", "Ruth Bader Ginsburg"], "correct": "Thurgood Marshall", "points": 400},
+          {"question": "Who was the first female Prime Minister of the United Kingdom?", "options": ["Margaret Thatcher", "Theresa May", "Elizabeth II", "Indira Gandhi"], "correct": "Margaret Thatcher", "points": 100},
+          {"question": "Who was the longest-serving emperor of China, ruling from 1644 to 1912?", "options": ["Qianlong Emperor", "Emperor Kangxi", "Emperor Taizong", "Emperor Yongle"], "correct": "Qianlong Emperor", "points": 200}
+        ],
+        "Historical Eras": [
+          {"question": "What ancient civilization, known for its pyramids, hieroglyphs, and mummification practices, thrived along the Nile River from around 3000 BCE to 30 BCE?", "options": ["Ancient Greece", "Ancient Egypt", "The Indus Valley", "The Sumerians"], "correct": "Ancient Egypt", "points": 100},
+          {"question": "What era, beginning in the late 18th century, saw major industrialization, technological advancements, and the transition from agrarian societies to industrial ones?", "options": ["The Industrial Revolution", "The Age of Enlightenment", "The Age of Exploration", "The Age of Reason"], "correct": "The Industrial Revolution", "points": 200},
+          {"question": "The 1960s and 1970s were marked by global social, political, and cultural upheaval, including civil rights movements, protests, and major advances in technology. This era is often called what?", "options": ["The Great Depression Era", "The Space Race Era", "The Gilded Age", "The Counterculture Era"], "correct": "The Counterculture Era", "points": 300},
+          {"question": "The period from the mid-15th century to the early 17th century, characterized by the widespread exploration, expansion, and colonization of the Americas by European powers, is known as what?", "options": ["The Age of Discovery", "The Age of Enlightenment", "The Age of Empires", "The Medieval Era"], "correct": "The Age of Discovery", "points": 400},
+          {"question": "Which era, beginning in the 5th century, was characterized by the decline of the Roman Empire and the onset of the Middle Ages in Europe?", "options": ["The Dark Ages", "The Renaissance", "The Enlightenment", "The Industrial Revolution"], "correct": "The Dark Ages", "points": 100},
+          {"question": "What period in European history, starting in the 14th century, brought about a cultural revival of classical art and learning?", "options": ["The Renaissance", "The Age of Enlightenment", "The Baroque Period", "The Middle Ages"], "correct": "The Renaissance", "points": 200},
+          {"question": "Which historical period, beginning in the early 20th century, saw the rise of totalitarian regimes and the outbreak of two world wars?", "options": ["The Cold War", "World War I", "World War II", "The Interwar Period"], "correct": "The Interwar Period", "points": 300},
+          {"question": "What era, starting in the 5th century BCE, marked the beginning of classical Greek civilization and philosophy?", "options": ["The Hellenistic Era", "The Golden Age of Greece", "The Byzantine Era", "The Roman Empire"], "correct": "The Golden Age of Greece", "points": 400},
+          {"question": "What period in history is known for the spread of Buddhism and the Silk Road trade in China and Central Asia?", "options": ["The Tang Dynasty", "The Han Dynasty", "The Qin Dynasty", "The Yuan Dynasty"], "correct": "The Han Dynasty", "points": 100},
+          {"question": "The Cold War era was characterized by the tension between which two superpowers?", "options": ["USA and Japan", "USA and USSR", "USA and China", "China and Russia"], "correct": "USA and USSR", "points": 200}
+        ],
+        "World History": [
+          {"question": "Which period of time from 1914 to 1918 saw major global conflict, involving many of the world's great powers, and resulted in massive casualties and the redrawing of borders?", "options": ["World War II", "World War I", "The Cold War", "The Napoleonic Wars"], "correct": "World War I", "points": 100},
+          {"question": "What was the primary goal of the Crusades, a series of religious wars fought between the 11th and 15th centuries?", "options": ["To spread Christianity", "To conquer the Americas", "To establish the British Empire", "To control the Holy Land"], "correct": "To control the Holy Land", "points": 200},
+          {"question": "The Roman Empire expanded across Europe, Asia, and North Africa. Who was its first emperor?", "options": ["Julius Caesar", "Constantine", "Augustus Caesar", "Nero"], "correct": "Augustus Caesar", "points": 300},
+          {"question": "The Berlin Wall, which separated East and West Germany, fell in which year?", "options": ["1985", "1989", "1991", "2001"], "correct": "1989", "points": 400},
+          {"question": "Which Asian empire was ruled by Genghis Khan and became the largest contiguous empire in history?", "options": ["Ottoman Empire", "Roman Empire", "Mongol Empire", "Persian Empire"], "correct": "Mongol Empire", "points": 100},
+          {"question": "Which major global conflict took place between 1939 and 1945 and involved most of the world's nations?", "options": ["World War I", "World War II", "The Cold War", "The Vietnam War"], "correct": "World War II", "points": 200},
+          {"question": "What treaty ended World War I in 1919?", "options": ["Treaty of Versailles", "Treaty of Paris", "Treaty of Ghent", "Treaty of Brest-Litovsk"], "correct": "Treaty of Versailles", "points": 300},
+          {"question": "Which empire was known for its complex road system and its famous ruler, Alexander the Great?", "options": ["Roman Empire", "Macedonian Empire", "Persian Empire", "Byzantine Empire"], "correct": "Macedonian Empire", "points": 400},
+          {"question": "What event triggered the start of World War II in 1939?", "options": ["The assassination of Archduke Ferdinand", "The attack on Pearl Harbor", "The invasion of Poland", "The signing of the Munich Agreement"], "correct": "The invasion of Poland", "points": 100},
+          {"question": "Which country was responsible for the sinking of the Lusitania in 1915?", "options": ["Germany", "France", "England", "Russia"], "correct": "Germany", "points": 200}
+        ]
+      }
+    }
+  }
